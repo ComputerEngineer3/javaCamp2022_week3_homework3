@@ -1,0 +1,26 @@
+package oopWithNLayeredApp_kodlamaio.business;
+
+import oopWithNLayeredApp_kodlamaio.core.logging.Logger;
+import oopWithNLayeredApp_kodlamaio.dataAccess.CategoryDao;
+import oopWithNLayeredApp_kodlamaio.entities.Category;
+
+public class CategoryManager {
+	private CategoryDao categoryDao;
+	private Logger[] loggers;
+	
+	public CategoryManager(CategoryDao categoryDao, Logger[] loggers) {
+		this.categoryDao = categoryDao;
+		this.loggers = loggers;
+	}
+	
+	public void add(Category category) {
+		
+		
+		
+		categoryDao.add(category);
+		
+		for(Logger logger:loggers) {
+			logger.log(category.getName());
+		}
+	}
+}

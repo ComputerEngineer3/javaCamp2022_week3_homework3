@@ -1,0 +1,8 @@
+package oopWithNLayeredApp_kodlamaio.dataAccess;
+
+import oopWithNLayeredApp_kodlamaio.entities.Course;
+
+public interface CourseDao {
+	void add(Course course);
+	Course[] list();
+}

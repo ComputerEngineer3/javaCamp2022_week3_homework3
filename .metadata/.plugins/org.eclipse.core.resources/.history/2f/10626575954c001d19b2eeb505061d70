@@ -1,0 +1,5 @@
+package oopWithNLayeredApp_kodlamaio.dataAccess.hibernate;
+
+public class HibernateCourseDao {
+
+}

@@ -1,0 +1,5 @@
+package oopWithNLayeredApp_kodlamaio.entities;
+
+public class Instructor {
+
+}

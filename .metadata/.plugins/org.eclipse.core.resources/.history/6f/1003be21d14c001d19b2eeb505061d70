@@ -1,0 +1,40 @@
+package oopWithNLayeredApp_kodlamaio;
+
+import oopWithNLayeredApp_kodlamaio.business.CategoryManager;
+import oopWithNLayeredApp_kodlamaio.business.CourseManager;
+import oopWithNLayeredApp_kodlamaio.business.InstructorManager;
+import oopWithNLayeredApp_kodlamaio.core.logging.DatabaseLogger;
+import oopWithNLayeredApp_kodlamaio.core.logging.FileLogger;
+import oopWithNLayeredApp_kodlamaio.core.logging.Logger;
+import oopWithNLayeredApp_kodlamaio.core.logging.MailLogger;
+import oopWithNLayeredApp_kodlamaio.entities.Category;
+import oopWithNLayeredApp_kodlamaio.entities.Course;
+import oopWithNLayeredApp_kodlamaio.entities.Instructor;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Category category1 = new Category();
+		Category category2 = new Category();
+		
+		Course course1 = new Course();
+		Course course2 = new Course();
+		
+		Instructor instructor1 = new Instructor();
+		Instructor instructor2 = new Instructor();
+		
+		Logger[] loggers = {new DatabaseLogger(), new FileLogger(), new MailLogger()};
+		
+		
+		CategoryManager categoryManager = new CategoryManager(null, loggers);
+		categoryManager.add(null);
+		
+		CourseManager courseManager = new CourseManager(null, loggers);
+		courseManager.add(null);
+		
+		InstructorManager instructorManager = new InstructorManager(null, loggers);
+		instructorManager.add(null);
+	}
+
+}

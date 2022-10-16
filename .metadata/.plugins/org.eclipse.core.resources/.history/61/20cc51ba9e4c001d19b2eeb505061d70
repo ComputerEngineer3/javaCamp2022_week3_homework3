@@ -1,0 +1,16 @@
+package oopWithNLayeredApp_kodlamaio.business;
+
+import oopWithNLayeredApp_kodlamaio.core.logging.Logger;
+import oopWithNLayeredApp_kodlamaio.dataAccess.CourseDao;
+
+public class CourseManager {
+	private CourseDao courseDao;
+	private Logger[] loggers;
+	
+	public CourseManager(CourseDao courseDao, Logger[] loggers) {
+		this.courseDao = courseDao;
+		this.loggers = loggers;
+	}
+	
+	
+}

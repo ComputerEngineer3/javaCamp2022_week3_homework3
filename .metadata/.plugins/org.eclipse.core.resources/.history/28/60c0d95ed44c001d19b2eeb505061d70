@@ -1,0 +1,42 @@
+package oopWithNLayeredApp_kodlamaio;
+
+import oopWithNLayeredApp_kodlamaio.business.CategoryManager;
+import oopWithNLayeredApp_kodlamaio.business.CourseManager;
+import oopWithNLayeredApp_kodlamaio.business.InstructorManager;
+import oopWithNLayeredApp_kodlamaio.core.logging.DatabaseLogger;
+import oopWithNLayeredApp_kodlamaio.core.logging.FileLogger;
+import oopWithNLayeredApp_kodlamaio.core.logging.Logger;
+import oopWithNLayeredApp_kodlamaio.core.logging.MailLogger;
+import oopWithNLayeredApp_kodlamaio.dataAccess.hibernate.HibernateCategoryDao;
+import oopWithNLayeredApp_kodlamaio.dataAccess.hibernate.HibernateInstructorDao;
+import oopWithNLayeredApp_kodlamaio.dataAccess.jdbc.JdbcCourseDao;
+import oopWithNLayeredApp_kodlamaio.entities.Category;
+import oopWithNLayeredApp_kodlamaio.entities.Course;
+import oopWithNLayeredApp_kodlamaio.entities.Instructor;
+
+public class Main {
+
+	public static void main(String[] args) throws Exception {
+		
+		Category category1 = new Category(1,"Mobil Uygulama");
+		Category category2 = new Category(2,"Programlama");
+		
+		Course course1 = new Course(1,1,1,"Java","Description..........","java.jpg",25);
+		Course course2 = new Course(1,1,1,"Java 2022","Description..........","java.jpg",-15);
+		Course course3 = new Course(1,1,1,"Java 2022","Description..........","java.jpg",25);
+		
+		Instructor instructor1 = new Instructor(1,"Deniz","Demir","instructor.jpg");
+		
+		Logger[] loggers = {new DatabaseLogger(), new FileLogger(), new MailLogger()};		
+		
+		/*CategoryManager categoryManager = new CategoryManager(new HibernateCategoryDao(), loggers);
+		categoryManager.add(category1);*/
+		
+		CourseManager courseManager = new CourseManager(new JdbcCourseDao(), loggers);
+		courseManager.add(course1);
+		
+		/*InstructorManager instructorManager = new InstructorManager(new HibernateInstructorDao(), loggers);
+		instructorManager.add(instructor1);*/
+	}
+
+}

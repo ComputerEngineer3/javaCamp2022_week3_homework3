@@ -1,0 +1,10 @@
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.util.Collection"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.lang.Iterable"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.List"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="oopWithNLayeredApp_kodlamaio.business.CategoryManager"><rhs name\="oopWithNLayeredApp_kodlamaio.business.CategoryManager"/></lhs><lhs name\="oopWithNLayeredApp_kodlamaio.business.CourseManager"><rhs name\="oopWithNLayeredApp_kodlamaio.business.CourseManager"/></lhs><lhs name\="oopWithNLayeredApp_kodlamaio.business.InstructorManager"><rhs name\="oopWithNLayeredApp_kodlamaio.business.InstructorManager"/></lhs><lhs name\="oopWithNLayeredApp_kodlamaio.entities.Category"><rhs name\="oopWithNLayeredApp_kodlamaio.entities.Category"/></lhs><lhs name\="oopWithNLayeredApp_kodlamaio.entities.Course"><rhs name\="oopWithNLayeredApp_kodlamaio.entities.Course"/></lhs><lhs name\="oopWithNLayeredApp_kodlamaio.entities.Instructor"><rhs name\="oopWithNLayeredApp_kodlamaio.entities.Instructor"/></lhs><lhs name\="oopWithNLayeredApp_kodlamaio.dataAccess.CategoryDao"><rhs name\="oopWithNLayeredApp_kodlamaio.dataAccess.hibernate.HibernateCategoryDao"/></lhs><lhs name\="oopWithNLayeredApp_kodlamaio.dataAccess.CourseDao"><rhs name\="oopWithNLayeredApp_kodlamaio.dataAccess.jdbc.JdbcCourseDao"/></lhs><lhs name\="oopWithNLayeredApp_kodlamaio.dataAccess.InstructorDao"><rhs name\="oopWithNLayeredApp_kodlamaio.dataAccess.hibernate.HibernateInstructorDao"/></lhs></history>
+content_assist_number_of_computers=17
+eclipse.preferences.version=1
+org.eclipse.jdt.internal.ui.navigator.layout=2
+org.eclipse.jdt.internal.ui.navigator.librariesnode=true
+org.eclipse.jdt.ui.formatterprofiles.version=22
+spelling_locale_initialized=true
+typefilter_migrated_2=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

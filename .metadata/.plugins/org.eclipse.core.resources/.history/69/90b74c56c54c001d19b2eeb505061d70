@@ -1,0 +1,13 @@
+package oopWithNLayeredApp_kodlamaio.dataAccess.jdbc;
+
+import oopWithNLayeredApp_kodlamaio.dataAccess.CategoryDao;
+import oopWithNLayeredApp_kodlamaio.entities.Category;
+
+public class JdbcCategoryDao implements CategoryDao {
+
+	@Override
+	public void add(Category category) {
+		System.out.println("JDBC ile veritabanına eklendi.");
+	}
+
+}

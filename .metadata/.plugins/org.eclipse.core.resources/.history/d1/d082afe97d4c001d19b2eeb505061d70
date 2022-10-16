@@ -1,0 +1,7 @@
+package oopWithNLayeredApp_kodlamaio.entities;
+
+public class Course {
+	private int id;
+	private String Name;
+	private double unitPrice;
+}
